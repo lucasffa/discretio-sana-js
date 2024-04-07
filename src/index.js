@@ -13,11 +13,11 @@ function setupApp() {
             const componentName = e.detail.componentName;
             currentIndex = e.detail.thisComponentIndex;
             const componentIndex = componentsToLoad.findIndex(name => name === componentName);
-        
+
             console.log("Evento componentDataSaved recebido para", componentName);
             console.log("currentIndex: ", currentIndex);
             console.log("componentIndex: ", componentIndex);
-        
+
             // Avança somente se o evento veio do componente atual e ainda há componentes para carregar
             if (currentIndex === componentIndex && currentIndex < componentsToLoad.length - 1) {
                 currentIndex++;
@@ -172,7 +172,7 @@ function setupApp() {
                     console.error(`Erro ao carregar o componente ${name}:`, error);
                 });
         }
-        
+
         // Inicia a configuração dos botões de navegação
         setupNavigationButtons();
 
