@@ -1,0 +1,14 @@
+#user-identification {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  #user-identification label {
+    margin-top: 10px;
+  }
+  
+  #user-identification input {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
